@@ -151,7 +151,11 @@ $(document).ready(function staff() {
   // Sort data by name  (ascending)
   function sortDataAlpha(column, ascending) {
     dataSet.sort(function (a, b) {     
-        return a[column].localeCompare(b[column]);     
+      if (ascending) {
+        return a[column].localeCompare(b[column]);
+      } else {
+        return b[column].localeCompare(a[column]);
+      }     
     });
     displayData();
   }
@@ -175,13 +179,22 @@ $(document).ready(function staff() {
   }
   
   // Sort data by name on click with function sortDataAlpha
-  $("#sort-name").click(function sortname() {
+  $("#sort-name-asc").click(function sortname() {
     sortDataAlpha(0, true); // Sort data by name (0 is the column number, true is ascending)
   });
 
+// Sort data by name on click with function sortDataAlpha
+$("#sort-name-des").click(function sortname() {
+  sortDataAlpha(0, false); // Sort data by name (0 is the column number, true is descending)
+});
   // Sort data by salary on click with function sortDataNum
-  $("#sort-salary").click(function sortsalary() { 
+  $("#sort-salary-asc").click(function sortsalary() { 
     sortDataNum(5, true);// Sort data by salary (5 is the column number, true is ascending)
+  });
+
+  // Sort data by salary on click with function sortDataNum
+  $("#sort-salary-des").click(function sortsalary() { 
+    sortDataNum(5, false);// Sort data by salary (5 is the column number, true is descending)
   });
 
   displayData();
