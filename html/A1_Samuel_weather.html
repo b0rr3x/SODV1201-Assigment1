@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+@name: Assigmnet 1
+@course Code: SODV1201 - 23JANMNTR1
+@class: Software Development Diploma Program
+@author: Samuel Borrego Vargas
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page - Introduction to Web Programming Assignment 1</title>
+    <link rel="icon" href="../favicon.ico?v=2" />
+    <link rel="stylesheet" type="text/css" href="../css/A1_Samuel_style.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/A1_Samuel_script.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../A1_Samuel_index.html">Home</a>
+        <a href="../html/A1_Samuel_marktograde.html">Mark To Grade</a>
+        <a href="../html/A1_Samuel_staff.html">Staff Page</a>
+        <a href="../html/A1_Samuel_weather.html">Weather Page</a>
+    </div>
+
+    <div class="top-container">
+        <h1>Weather Page</h1>
+        <p> program that can accept a temperature input in degree Fahrenheit and convert it into degree Celsius and from
+            Celsius to Kelvin based on a button click event</p>
+    </div>
+
+    <div class="fahrenheit">
+        <label for="fahrenheit-input">Fahrenheit:</label>
+        <input type="text" id="fahrenheit-input">
+        <p id="temp-input" style="color: red"></p>
+    </div>
+    <button id="convert-btn">Convert</button>
+
+    <div class="celsius">
+        <label for="celsius-output">Celsius:</label>
+        <span id="celsius-output"></span>
+    </div>
+    <div class="kelvin">
+        <label for="kelvin-output">Kelvin:</label>
+        <span id="kelvin-output"></span>
+    </div>
+    <hr>
+    <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Please Connect with me</h3>
+        <p class="contact-message">
+            Connect with me on my Social Media or Drop me a Line...
+        </p>
+        <a class="btn" href="mailto:contact@samuelborrego.com">CONTACT ME</a>
+    </div>
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/samuelborrego/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/b0rr3x">Twitter</a>
+        <a class="footer-link" href="https://www.samuelborrego.com/">Website</a>
+        <p class="copyright"><span id="date"></span> - © Samuel Borrego.</p>
+    </div>
+
+</body>
+
+</html>
